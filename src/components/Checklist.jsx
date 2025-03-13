@@ -11,7 +11,7 @@ import Id from '../assets/icons/id.svg'
 import Mountain from '../assets/icons/mountain.svg'
 import Rocket from '../assets/icons/rocket.svg'
 
-const Checklist = ({ items, category }) => {
+const Checklist = ({ items, category}) => {
     const [checkedItems, setCheckedItems] = useState(() => {
         const saved = localStorage.getItem(category);
         return saved ? JSON.parse(saved) : {};
